@@ -21,6 +21,8 @@ client.once('ready', () => {
     client.user.setActivity('with Commando');
 });
 
+client.user.setActivity("Waiting...")
+
 client.on('error', console.error);
     
 client.login(process.env.token)
