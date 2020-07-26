@@ -13,7 +13,7 @@ module.exports = class daysLeftCommand extends Command {
 
     run(message) {
         var currentDay = new Date(Date.now())
-        var dayOfSD = new Date('6/2/21')
+        var dayOfSD = new Date('5/31/21')
         var difference = Math.round((dayOfSD.getTime() - currentDay.getTime()) / (1000 * 3600 * 24)) - 1
 
 		return message.say('There are only ' + difference + ' days left!!!')

@@ -12,6 +12,6 @@ module.exports = class dateCommand extends Command {
     }
 
     run(message) {
-		return message.say('June 2nd, 2021')
+		return message.say('May 31st, 2021')
 	}
 };
