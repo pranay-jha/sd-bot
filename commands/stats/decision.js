@@ -24,6 +24,6 @@ module.exports = class dateCommand extends Command {
 		minutes = minutes - (days * 24 * 60) - (hours * 60)
 		seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60)
 
-		return message.say('THERE ARE ONLY ' + days + ' DAYS, ' + hours + ' HOURS, ' + minutes + ' MINUTES, AND ' + seconds + ' SECONDSUNTIL UCSD DECISION DAY!!!')
+		return message.say('THERE ARE ONLY ' + days + ' DAYS, ' + hours + ' HOURS, ' + minutes + ' MINUTES, AND ' + seconds + ' SECONDS UNTIL UCSD DECISION DAY!!!')
 	}
 };
