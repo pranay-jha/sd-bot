@@ -20,7 +20,11 @@ module.exports = class dateCommand extends Command {
 		var hours = Math.floor(minutes/60)
 		var days = Math.floor(hours/24)
 
-		hours = hours - (days * 24)
+		hours = hours - (days * 24)  + 8
+		if (hours >= 24) {
+			days++
+			hours = hours - 24
+		}
 		minutes = minutes - (days * 24 * 60) - (hours * 60)
 		seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60)
 
